@@ -69,7 +69,9 @@
     "lint": "eslint \"src/**/*.{js,jsx,ts,tsx,json}\"",
     "lint:fix": "eslint --fix 'src/**/*.{js,jsx,ts,tsx,json}'",
     "prettier": "prettier --write .",
-    "format": "prettier-eslint \"src/**/*.ts\"",
+    "format": "prettier-eslint \"src/**/*.ts\"","prepare": "husky install",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook",
     "test": "node scripts/test.js"
   },
   "browserslist": {
@@ -143,6 +145,8 @@
   "devDependencies": {
     "@commitlint/cli": "^17.4.2",
     "@commitlint/config-conventional": "^17.4.2",
+    "@storybook/react": "^6.5.16",
+    "@types/storybook__react": "^5.2.1",
     "@typescript-eslint/eslint-plugin": "^5.0.0",
     "eslint": "^8.0.1",
     "eslint-config-prettier": "^8.6.0",
